@@ -32,5 +32,5 @@ total = Invoice.get_total(units, cost)
 puts "total before discounts #{total}";
 total = Discount.get_discount(total)
 puts "total after discounts #{total}";
-total = Tax.get_taxes(total)
+total = Tax.get_taxes(total, state)
 puts "total after taxs #{total}"
